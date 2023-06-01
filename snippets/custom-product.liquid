@@ -1,0 +1,11 @@
+<article class="custom-product">
+  <div class="custom-product__image">
+    <img src="{{ card_product.featured_image | img_url: 'master' }}" alt="{{ card_product.title }}">
+  </div>
+  <a href="{{ card_product.url }}" class="custom-product__link">
+    {{ card_product.title }}
+  </a>
+  <button class="custom-product__btn">
+    {{ 'products.product.add_to_cart' | t }} - {{ card_product.price | money_without_trailing_zeros }}
+  </button>
+</article>

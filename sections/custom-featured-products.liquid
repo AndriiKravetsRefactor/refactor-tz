@@ -1,0 +1,36 @@
+<h2>
+  {{ section.settings.title }}
+</h2>
+{% for product in section.settings.collection.products %}
+  {% render 'custom-product',
+          card_product: product
+  %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Featured Products",
+  "tag": "section",
+  "class": "custom_featured_products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products",
+      "settings": {
+        "title": "Featured Products"
+      }
+    }
+  ]
+}
+{% endschema %}
