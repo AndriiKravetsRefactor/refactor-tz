@@ -1,12 +1,15 @@
 <h2>
   {{ section.settings.title }}
 </h2>
-{% for product in section.settings.collection.products %}
-  {% render 'custom-product',
-          card_product: product
-  %}
-{% endfor %}
 
+{% assign arrCartId = cart.items | map: 'title' %}
+{% for product in section.settings.collection.products %}
+  {% unless arrCartId contains product.title %}
+    {% render 'custom-product',
+            card_product: product
+    %}
+  {% endunless %}
+{% endfor %}
 {% schema %}
 {
   "name": "Featured Products",

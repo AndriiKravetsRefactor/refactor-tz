@@ -1063,3 +1063,18 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+class CustomProduct extends HTMLElement {
+    constructor() {
+        super();
+        this.button = this.querySelector('button');
+        this.button.addEventListener(
+            'click',
+            this.onSummaryClick
+        );
+    }
+    onSummaryClick(event) {
+        console.log(event.target)
+    }
+}
+customElements.define('custom-product', CustomProduct);
