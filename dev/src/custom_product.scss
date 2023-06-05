@@ -1,0 +1,15 @@
+.custom-product{
+  flex-basis: 50%;
+  &__link{
+    display: block;
+  }
+  &__btn{
+   display: flex;
+    background-color: #4A97AF;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    height: 66px;
+    align-items: center;
+  }
+}
