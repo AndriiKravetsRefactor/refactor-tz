@@ -32,7 +32,7 @@
       "type": "custom-featured-products",
       "settings": {
         "title": "Featured Products",
-        "collection": "vases"
+        "collection": "frontpage"
       }
     }
   },

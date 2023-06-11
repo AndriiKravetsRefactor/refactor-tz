@@ -1,4 +1,4 @@
-<custom-product id='{{ card_product.variants[0].id }}' class="custom-product">
+<custom-product class="custom-product" data-sectionId="{{ section_id }}">
 <article class="custom-product">
   <div class="custom-product__image">
     <img src="{{ card_product.featured_image | img_url: 'master' }}" alt="{{ card_product.title }}">
@@ -6,8 +6,19 @@
   <a href="{{ card_product.url }}" class="custom-product__link">
     {{ card_product.title }}
   </a>
-  <button class="custom-product__btn" >
-    {{ 'products.product.add_to_cart' | t }} - {{ card_product.price | money_without_trailing_zeros }}
-  </button>
+  <form class="featured-products__form" method="post" action="/cart/add">
+    <input
+            id="product-id"
+            class="product-variant-select"
+            type="hidden"
+            name="id"
+            value="{{ card_product.variants.first.id }}"
+    >
+    <input
+            type="submit"
+            value="Add to cart - {{ card_product.price | money_without_trailing_zeros }}"
+            class="custom-product__btn"
+    >
+  </form>
 </article>
 </custom-product>

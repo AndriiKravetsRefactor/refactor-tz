@@ -1,4 +1,5 @@
 {{ 'featured_products.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'featured-product.js' | asset_url }}" defer></script>
 
 <section class="featured-products">
   <h2 class="featured-products__title">
@@ -10,7 +11,8 @@
       {% for product in section.settings.collection.products %}
         {% unless arrCartId contains product.title %}
           {% render 'custom-product',
-                  card_product: product
+                  card_product: product,
+                  section_id: section.id
           %}
         {% endunless %}
       {% endfor %}
