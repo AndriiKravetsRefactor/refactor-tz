@@ -139,6 +139,14 @@
           "color_scheme": "background-1"
         }
       }
+    },
+    "blocks": {
+      "a7e2bca6-59af-4383-91e9-6f6d363d3804": {
+        "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": false,
+        "settings": {
+        }
+      }
     }
   },
   "presets": {

@@ -40,6 +40,7 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'flickity.pkgd.min.js' | asset_url }}" defer="defer"></script>
+    {% render 'boost-sd-fallback' %}
     {{ content_for_header }}
 
     {%- liquid

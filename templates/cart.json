@@ -27,10 +27,44 @@
       ],
       "settings": {
       }
+    },
+    "8ec2c1dc-b101-47c2-a1b7-12388b428b23": {
+      "type": "apps",
+      "blocks": {
+        "9ae95c3c-f5d8-4b17-9cf1-5941c8d44b27": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/recommendation\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {
+            "widgetId": "cartpage-157386"
+          }
+        }
+      },
+      "block_order": [
+        "9ae95c3c-f5d8-4b17-9cf1-5941c8d44b27"
+      ],
+      "settings": {
+      }
+    },
+    "bf7e5219-df48-41a4-b2e1-1b936b353908": {
+      "type": "apps",
+      "blocks": {
+        "7531ba04-97cc-44c7-b9bc-f3e2384babb7": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/recommendation\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {
+            "widgetId": "cartpage-528562"
+          }
+        }
+      },
+      "block_order": [
+        "7531ba04-97cc-44c7-b9bc-f3e2384babb7"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "cart-items",
-    "cart-footer"
+    "cart-footer",
+    "8ec2c1dc-b101-47c2-a1b7-12388b428b23",
+    "bf7e5219-df48-41a4-b2e1-1b936b353908"
   ]
 }
