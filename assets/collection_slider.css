@@ -1,0 +1,12 @@
+.collection-slider .collection-carousel {
+  box-shadow: none !important;
+}
+.collection-slider .collection-carousel__item {
+  width: 33.3%;
+  padding: 5px;
+}
+.collection-slider .collection-carousel__item img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbGxlY3Rpb25fc2xpZGVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0U7RUFDRTs7QUFDQTtFQUNFO0VBQ0E7O0FBQ0E7RUFDRTtFQUNBIiwiZmlsZSI6ImNvbGxlY3Rpb25fc2xpZGVyLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb2xsZWN0aW9uLXNsaWRlcntcclxuICAuY29sbGVjdGlvbi1jYXJvdXNlbCB7XHJcbiAgICBib3gtc2hhZG93OiBub25lICFpbXBvcnRhbnQ7XHJcbiAgICAmX19pdGVtIHtcclxuICAgICAgd2lkdGg6IDMzLjMlO1xyXG4gICAgICBwYWRkaW5nOiA1cHg7XHJcbiAgICAgIGltZ3tcclxuICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICAgIH1cclxuICAgIH1cclxuICB9XHJcbn0iXX0= */
