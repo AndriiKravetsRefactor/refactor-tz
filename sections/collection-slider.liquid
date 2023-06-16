@@ -1,0 +1,39 @@
+{{ 'collection_slider.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'collection_slider.js' | asset_url }}" defer></script>
+
+<section class="collection-slider">
+  <div class="container1">
+    <div class="collection-carousel">
+      {% for product in section.settings.collection.products %}
+          <div class="collection-carousel__item">
+            <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Collection Slider",
+  "tag": "section",
+  "class": "collection_slider",
+  "settings": [
+    {
+      "type": "number",
+      "id": "count",
+      "label": "Count Slides",
+      "default": 3
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Slider"
+    }
+  ]
+}
+{% endschema %}

@@ -34,10 +34,18 @@
         "title": "Featured Products",
         "collection": "frontpage"
       }
+    },
+    "65e75654-8979-47f8-b011-4e80c14aac29": {
+      "type": "collection-slider",
+      "settings": {
+        "count": 3,
+        "collection": "frontpage"
+      }
     }
   },
   "order": [
     "featured_collection",
-    "0467c4d3-1340-4036-b402-8ea6fbc206fe"
+    "0467c4d3-1340-4036-b402-8ea6fbc206fe",
+    "65e75654-8979-47f8-b011-4e80c14aac29"
   ]
 }

@@ -1,0 +1,13 @@
+.collection-slider{
+  .collection-carousel {
+    box-shadow: none !important;
+    &__item {
+      width: 33.3%;
+      padding: 5px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
