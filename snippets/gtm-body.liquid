@@ -1,0 +1,32 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVQH7SR"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+{% if template == 'product' %}
+
+{% comment %} View product {% endcomment %}
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'ga4_view_product_page',
+        ecommerce: {
+            items: [
+                {
+                    "item_name": "{{ product.title | escape_once }}",
+                    "item_id": "{{ product.selected_or_first_available_variant.sku | escape_once }}",
+                    "price": {{ product.selected_or_first_available_variant.price | money_without_currency }},
+                    "item_brand": "{{ product.vendor | escape_once }}",
+                  {% for collection in product.collections -%}
+                  {% if forloop.index == 1 -%}
+                    "item_category": "{{ collection.title | escape_once }}"{%- unless forloop.last -%},{%- endunless %}
+                  {% else -%}
+                    "item_category{{ forloop.index }}": "{{ collection.title | escape_once }}"{%- unless forloop.last -%},{%- endunless %}
+                  {% endif -%}
+                  {% endfor -%}
+                }
+            ]
+        }
+    });
+</script>
+{% endif %}
